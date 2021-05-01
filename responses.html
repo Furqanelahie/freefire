@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>Furqan_Response Viewer Ff</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+        <div id="b"></div>
+        <script>
+            
+
+
+
+
+function Show(){
+    
+    $.get("https://api.jsonstorage.net/v1/json/5bc8c361-7d0e-410c-80fd-26a7df326b7f", function(data, textStatus, jqXHR) {
+                
+                
+                var jso= JSON.stringify(data)
+                
+                var arr=data
+                
+             for(i=arr.length-1;i>-1;i--){
+    b.innerHTML+=`<p>${arr[i]}</p>`
+
+}
+                 });
+                 
+                 
+}
+
+
+
+
+
+
+        </script>
+        <script>
+            Show()
+        </script>
+                
+                
+           
+            
+        
